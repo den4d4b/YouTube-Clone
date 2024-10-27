@@ -34,8 +34,13 @@
             </button>
         </div>
         <div class="right-section">
-            <div class="upload-icon-container">
-                <img class="upload-icon" src="icons/upload.svg" alt="">
+            <div class="upload-icon-container dropdown">
+                <img id="createIcon" class="upload-icon" src="icons/upload.svg" alt="Create">
+                <div id="menu" class="dropdown-menu">
+                    <a href="#">Upload Video</a>
+                    <a href="#">Go Live</a>
+                    <a href="#">Create Post</a>
+                </div>
                 <div class="tooltip">Create</div>
             </div>
             <div class="notifications-icon-container">
@@ -43,8 +48,14 @@
                 <div class="notifications-count">9+</div>
                 <div class="tooltip">Notifications</div>
             </div>
-            <img class="channel-profile-picture" src="channel-pictures/channel-profile-picture.jpg" alt="">
-        </div>
+            <div class="profile-container">
+            <img class="channel-profile-picture" src="channel-pictures/channel-profile-picture.jpg" alt="Profile Icon" id="profileIcon">
+             <div class="profile-dropdown" id="profileDropdown">
+                    <a href="#">Your Channel</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Sign Out</a>
+                </div>
+            </div>
     </header>
 
     <nav class="sidebar">
@@ -285,7 +296,7 @@
         </section>
 
     </main>
-
+ <script src="script.js"></script>
 
 </body>
 
